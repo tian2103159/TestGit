@@ -127,6 +127,10 @@ public class Util {
     }
 
         public static void main(String[] args){
+<<<<<<< HEAD
 	        System.out.println(new String(WarpLongSMS("test git")));
+=======
+         System.out.println(new String(WarpLongSMS("test_git")));
+>>>>>>> test_m
         }
 }
