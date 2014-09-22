@@ -127,6 +127,6 @@ public class Util {
     }
 
         public static void main(String[] args){
-         System.out.println(new String(WarpLongSMS("此类提供了针对加密和解密的密码 cipher 功能。它构成了 Java Cryptographic Extension (JCE) 框架的核心.为创建 Cipher 对象，应用程序调用 Cipher 的 getInstance 方法并将请求的转换 名称传递给它。作为可选项，也可以指定提供程序的名称。转换 是描述为产生某种输出而在给定的输入上执行的操作（或一组操作）的字符串。转换始终包括加密算法的名称（例如，DES），后面可能跟有一个反馈模式和填充方案。")));
+         System.out.println(new String(WarpLongSMS("test_git")));
         }
 }
