@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<option>
+		<cmppthread>1</cmppthread>
+		<sgipthread>1</sgipthread>
+		<xltthread>1</xltthread>
+		<othersthread>1</othersthread>
+	</option>
+
+	<oracle>
+		<username>qxt_233</username>
+		<password>qxt</password>		
+		<url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</url>		
+		<!--<url>jdbc:oracle:thin:@192.168.168.68:1521:orcl</url>-->
+		
+		<!-- 移动表、联通、小灵通、其他网关表的存储过程-->
+		<readwaitdata>qxt_buffer.getwaitdata</readwaitdata>		
+		<writedata>qxt_gateway_cmppsgip.AddMessageToCmppOrSgip</writedata>
+		<numquery>qxt_gateway_cmppsgip.getdatacount</numquery>
+		
+		<!-- 移动所属网关,多个以逗号分隔 -->
+		<!--<yidongGwkind>0</yidongGwkind> -->
+		<!-- 联通所属网关,多个以逗号分隔 -->
+		<!--<liantongGwkind>1</liantongGwkind> -->
+		<!-- 小灵通所属网关,多个以逗号分隔 -->
+		<xltGwkind>2,3</xltGwkind>
+		<!-- others所属网关,多个以逗号分隔 -->
+		<othersGwkind>99,88,87,77,66</othersGwkind>
+		
+		<!-- 移动表阀值-->
+		<yidongmax>300</yidongmax>		
+		<!-- 联通表阀值-->
+		<liantongmax>300</liantongmax>
+		<!-- 小灵通表阀值-->
+		<xltmax>300</xltmax>
+		<!-- 其他网关表阀值-->
+		<othersmax>300</othersmax>
+		
+		<sleeptime>100</sleeptime>
+		
+		<!-- 线程提取速度参数-->
+		<sendinterval>50</sendinterval>
+		
+		<batchnum>80</batchnum>
+	</oracle>
+	
+</config>
+
